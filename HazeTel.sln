@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HazeTel", "HazeTel\HazeTel.csproj", "{8D06CD05-9D14-475B-8B0A-62AB2A7AC0EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "telemetry", "telemetry\telemetry.csproj", "{1F36D379-AB26-4F62-A496-0A66B0751A2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D06CD05-9D14-475B-8B0A-62AB2A7AC0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D06CD05-9D14-475B-8B0A-62AB2A7AC0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D06CD05-9D14-475B-8B0A-62AB2A7AC0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D06CD05-9D14-475B-8B0A-62AB2A7AC0EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F36D379-AB26-4F62-A496-0A66B0751A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F36D379-AB26-4F62-A496-0A66B0751A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F36D379-AB26-4F62-A496-0A66B0751A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F36D379-AB26-4F62-A496-0A66B0751A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

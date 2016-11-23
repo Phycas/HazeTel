@@ -1,0 +1,12 @@
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\bin\Debug\HazeTel.exe.config
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\obj\Debug\HazeTel.csprojResolveAssemblyReference.cache
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\obj\Debug\HazeTel.Form1.resources
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\obj\Debug\HazeTel.Properties.Resources.resources
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\obj\Debug\HazeTel.csproj.GenerateResource.Cache
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\obj\Debug\HazeTel.exe
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\obj\Debug\HazeTel.pdb
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\bin\Debug\HazeTel.exe
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\bin\Debug\HazeTel.pdb
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\bin\Debug\telemetry.dll
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\bin\Debug\OpenHardwareMonitorLib.dll
+c:\users\hunte\onedrive\documents\visual studio 2015\Projects\HazeTel\HazeTel\bin\Debug\telemetry.pdb

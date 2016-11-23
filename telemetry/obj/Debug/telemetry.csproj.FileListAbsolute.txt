@@ -1,0 +1,6 @@
+c:\Users\Hunte\OneDrive\documents\visual studio 2015\Projects\HazeTel\telemetry\bin\Debug\telemetry.dll
+c:\Users\Hunte\OneDrive\documents\visual studio 2015\Projects\HazeTel\telemetry\bin\Debug\telemetry.pdb
+c:\Users\Hunte\OneDrive\documents\visual studio 2015\Projects\HazeTel\telemetry\bin\Debug\OpenHardwareMonitorLib.dll
+c:\Users\Hunte\OneDrive\documents\visual studio 2015\Projects\HazeTel\telemetry\obj\Debug\telemetry.csprojResolveAssemblyReference.cache
+c:\Users\Hunte\OneDrive\documents\visual studio 2015\Projects\HazeTel\telemetry\obj\Debug\telemetry.dll
+c:\Users\Hunte\OneDrive\documents\visual studio 2015\Projects\HazeTel\telemetry\obj\Debug\telemetry.pdb
