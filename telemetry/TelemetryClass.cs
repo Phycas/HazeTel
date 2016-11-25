@@ -29,7 +29,7 @@ namespace telemetry
         public string UpTime() //Returns a string with the uptime
         {
             TimeSpan uptimeSpan = TimeSpan.FromSeconds(PC_uptime.NextValue()); // convert uptime to seconds
-            string timeawake = string.Format("Up time: {0} days {1}:{2}:{3}", //store uptime formated into a string
+            string timeawake = string.Format("{0}:{1}:{2}:{3}", //store uptime formated into a string
                 (int)uptimeSpan.TotalDays, //this stores the total of days
                 (int)uptimeSpan.Hours,      //this stores the hours since last day
                 (int)uptimeSpan.Minutes,    //this stores the minutes passed since last hour
