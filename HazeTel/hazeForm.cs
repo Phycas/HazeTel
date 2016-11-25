@@ -15,7 +15,7 @@ namespace HazeTel
     public partial class hazeForm : Form
     {
         private double release = 1.2;
-       
+        private bool voiceActive = true;
 
         Telemetry teletest = new Telemetry();
         public bool runTele = true;
@@ -29,6 +29,7 @@ namespace HazeTel
 
         private void Form1_Load(object sender, EventArgs e) 
         {
+            
             Thread tely = new Thread(printThread); // starts the telemetry thread
             loadLabel.BackColor = Color.Transparent;
             tely.Start();
@@ -92,6 +93,13 @@ namespace HazeTel
                     updateLabels(reporte); // runs on UI thread
                 });
 
+                //voice
+                if (voiceActive)
+                {
+                    if (temp >= 60)
+                        Telemetry.voice.Speak("Core Temperature over sixty degrees", 2);
+                }
+
                 Thread.Sleep(400);
                  
             }
@@ -110,6 +118,23 @@ namespace HazeTel
         private void loadLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            if (voiceActive)
+            {
+                voiceActive = false;
+
+                label1.Text = "voice off";
+            }
+
+            else if (voiceActive == false)
+            {
+                voiceActive = true;
+                Telemetry.voice.Speak("voice activated", 2);
+                label1.Text = "voice on";
+            }
         }
     }
 }

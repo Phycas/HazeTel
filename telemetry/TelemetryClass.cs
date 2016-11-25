@@ -8,6 +8,7 @@ using OpenHardwareMonitor;
 using System.Diagnostics;
 using OpenHardwareMonitor.Hardware;
 using System.Speech.Synthesis;
+using System.Threading;
 
 namespace telemetry
 {
@@ -113,12 +114,27 @@ namespace telemetry
 
         public class voice
         {
+            public static Thread speaky;
+
             public static SpeechSynthesizer synth = new SpeechSynthesizer();
-            public static void Speak(string message, int rate) //speak the message at the desired speed (rate)
+            public static string message;
+            public static int rate;
+
+
+            public static void Speak(string m, int r) //speak the message at the desired speed (rate)
+            {
+                message = m;
+                rate = r;
+                speaky = new Thread(spThread); //WIP
+               
+            }
+
+            static void spThread() //fix this, it's not working
             {
                 synth.Volume = 100;
                 synth.Rate = rate;
                 synth.Speak(message);
+                speaky.Abort();
             }
 
         }

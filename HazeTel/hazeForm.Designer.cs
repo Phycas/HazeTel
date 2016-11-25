@@ -34,6 +34,7 @@
             this.upTimeLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.hazetelForm = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hazetelForm)).BeginInit();
             this.SuspendLayout();
@@ -97,19 +98,32 @@
             this.hazetelForm.TabIndex = 11;
             this.hazetelForm.TabStop = false;
             // 
-            // Form1
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label1.Location = new System.Drawing.Point(154, 172);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 17);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "voice on";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // hazeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(222, 149);
+            this.ClientSize = new System.Drawing.Size(222, 224);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.upTimeLabel);
             this.Controls.Add(this.loadLabel);
             this.Controls.Add(this.tempLabel);
             this.Controls.Add(this.hazetelForm);
-            this.Name = "Form1";
+            this.Name = "hazeForm";
             this.Opacity = 0.75D;
             this.Text = "HazeTel ";
             this.TransparencyKey = System.Drawing.Color.White;
@@ -128,6 +142,7 @@
         private System.Windows.Forms.Label upTimeLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox hazetelForm;
+        private System.Windows.Forms.Label label1;
     }
 }
 
