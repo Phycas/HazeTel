@@ -16,7 +16,7 @@ namespace HazeTel
     {
         private double release = 1.2;
         private bool voiceActive = true;
-
+        private string voiceMessage;
         Telemetry teletest = new Telemetry();
         public bool runTele = true;
         public hazeForm()
@@ -31,7 +31,9 @@ namespace HazeTel
         {
             
             Thread tely = new Thread(printThread); // starts the telemetry thread
+            //Thread voicy = new Thread()
             loadLabel.BackColor = Color.Transparent;
+            voiceMessage = "hi";
             tely.Start();
         }
 
@@ -53,6 +55,13 @@ namespace HazeTel
             upTimeLabel.Text = weas[2];
 
         }
+
+        private void voiceThread()
+        {
+            Telemetry.voice.Speak(voiceMessage, 2);
+        }
+
+
 
         private void printThread()
         {
@@ -104,7 +113,7 @@ namespace HazeTel
                  
             }
         }
-
+        #region unused
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -119,7 +128,7 @@ namespace HazeTel
         {
 
         }
-
+        #endregion
         private void label1_Click(object sender, EventArgs e)
         {
             if (voiceActive)

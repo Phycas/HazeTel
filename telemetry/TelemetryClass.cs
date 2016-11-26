@@ -126,8 +126,17 @@ namespace telemetry
                 message = m;
                 rate = r;
                 speaky = new Thread(spThread); //WIP
+                speaky.Start();
                
             }
+
+           /* public static void Speak(string m, int r) //speak the message at the desired speed (rate)
+            {
+                synth.Volume = 100;
+                synth.Rate = rate;
+                synth.Speak(message);
+
+            }*/
 
             static void spThread() //fix this, it's not working
             {
