@@ -9,6 +9,10 @@ using System.Diagnostics;
 using OpenHardwareMonitor.Hardware;
 using System.Speech.Synthesis;
 using System.Threading;
+using System.Management;
+using System.Management.Instrumentation;
+using System.Collections.Specialized;
+
 
 namespace telemetry
 {
@@ -109,6 +113,37 @@ namespace telemetry
             }
 
             return temp;
+        }
+
+
+        public bool hddActivity()
+        {
+            bool isActive = false;
+            // esta cosa pide datos del WMI
+            ManagementClass hddDataClass = new ManagementClass("Win32_PerfFormattedData_PerfDisk_PhysicalDisk");
+
+            ManagementObjectCollection hddDataCollection = hddDataClass.GetInstances();
+
+
+            foreach (ManagementObject instance in hddDataCollection)
+            {
+                //Onlye process the total 
+                if (instance["Name"].ToString() == "_Total")
+                {
+                    //
+                    if (Convert.ToUInt64(instance["DiskBytesPersec"]) > 0)// se explca solo
+                    {
+                        isActive = true;//is active
+                    }
+
+                    else
+                    {
+                        isActive = false;//is idle
+                    }
+                }
+            }
+
+            return isActive;
         }
 
 

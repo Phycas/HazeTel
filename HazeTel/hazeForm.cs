@@ -56,6 +56,14 @@ namespace HazeTel
 
         }
 
+        private void updateHDDState(bool isBusy)
+        {
+            if (isBusy)
+            { hddlabel.Text = "HDD is Busy"; }
+            else
+                hddlabel.Text = "HDD is free";
+        }
+
         private void voiceThread()
         {
             Telemetry.voice.Speak(voiceMessage, 2);
@@ -77,6 +85,8 @@ namespace HazeTel
 
                 string uptime = teletest.UpTime();
 
+                bool hddBusy = teletest.hddActivity();
+
                 string[] reporte = new string[3];
                 if (temp < 10)
                 {
@@ -96,15 +106,22 @@ namespace HazeTel
                 else
                     reporte[1] = load.ToString();
 
+
                 reporte[2] = uptime;
-                 // running on worker thread
+
+                
+
+
+                // running on worker thread
                 this.Invoke((MethodInvoker)delegate {
+                    updateHDDState(hddBusy);
                     updateLabels(reporte); // runs on UI thread
                 });
 
                 //voice
                 if (voiceActive)
                 {
+                    
                     if (temp >= 60)
                         Telemetry.voice.Speak("Core Temperature over sixty degrees", 2);
                 }

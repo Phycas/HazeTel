@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.hazetelForm = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.hddlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hazetelForm)).BeginInit();
             this.SuspendLayout();
@@ -110,13 +111,24 @@
             this.label1.Text = "voice on";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // hddlabel
+            // 
+            this.hddlabel.AutoSize = true;
+            this.hddlabel.BackColor = System.Drawing.Color.Coral;
+            this.hddlabel.Location = new System.Drawing.Point(116, 239);
+            this.hddlabel.Name = "hddlabel";
+            this.hddlabel.Size = new System.Drawing.Size(31, 13);
+            this.hddlabel.TabIndex = 13;
+            this.hddlabel.Text = "HDD";
+            // 
             // hazeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(222, 224);
+            this.ClientSize = new System.Drawing.Size(222, 367);
             this.ControlBox = false;
+            this.Controls.Add(this.hddlabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.upTimeLabel);
@@ -143,6 +155,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox hazetelForm;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label hddlabel;
     }
 }
 
